@@ -1,5 +1,5 @@
-import 'package:trial_and_error/topics/provider/models/item.dart';
-import 'package:trial_and_error/topics/provider/state_managment/cart_notifier.dart';
+import 'package:trial_and_error/topics/provider/catalog/models/item.dart';
+import 'package:trial_and_error/topics/provider/catalog/state_managment/cart_notifier.dart';
 import 'package:test/test.dart';
 
 void main() {

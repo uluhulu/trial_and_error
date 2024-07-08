@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:trial_and_error/topics/provider/provider_app.dart';
-import 'package:trial_and_error/topics/provider/state_managment/cart_notifier.dart';
+import 'package:trial_and_error/topics/provider/catalog/catalog_app.dart';
+import 'package:trial_and_error/topics/provider/catalog/state_managment/cart_notifier.dart';
+import 'package:trial_and_error/topics/provider/slider/slider_main_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -51,9 +52,14 @@ class _MyHomePageState extends State<MyHomePage> {
           child: ListView(
         children: [
           ListTile(
-            title: const Text('Provider'),
+            title: const Text('Catalog'),
             onTap: () => Navigator.of(context).push(
-                MaterialPageRoute(builder: (context) => const ProviderApp())),
+                MaterialPageRoute(builder: (context) => const CatalogApp())),
+          ),
+          ListTile(
+            title: const Text('Slider'),
+            onTap: () => Navigator.of(context).push(MaterialPageRoute(
+                builder: (context) => const SliderMainScreen())),
           ),
         ],
       )),

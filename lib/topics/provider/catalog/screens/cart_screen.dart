@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:trial_and_error/topics/provider/state_managment/cart_notifier.dart';
+import 'package:trial_and_error/topics/provider/catalog/state_managment/cart_notifier.dart';
 
 class CartScreen extends StatelessWidget {
   const CartScreen({super.key});

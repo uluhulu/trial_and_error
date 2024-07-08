@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:trial_and_error/topics/provider/models/item.dart';
-import 'package:trial_and_error/topics/provider/screens/cart_screen.dart';
-import 'package:trial_and_error/topics/provider/state_managment/cart_notifier.dart';
+import 'package:trial_and_error/topics/provider/catalog/models/item.dart';
+import 'package:trial_and_error/topics/provider/catalog/screens/cart_screen.dart';
+import 'package:trial_and_error/topics/provider/catalog/state_managment/cart_notifier.dart';
 
 const List<Item> itemList = [
   Item(name: 'Book 1'),
@@ -17,8 +17,8 @@ const List<Item> itemList = [
   Item(name: 'Book 10'),
 ];
 
-class ProviderApp extends StatelessWidget {
-  const ProviderApp({super.key});
+class CatalogApp extends StatelessWidget {
+  const CatalogApp({super.key});
 
   @override
   Widget build(BuildContext context) {
